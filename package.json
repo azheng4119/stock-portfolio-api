@@ -1,0 +1,26 @@
+{
+  "name": "stock-portfolio-api",
+  "version": "1.0.0",
+  "description": "api for stock portfolio app",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azheng4119/stock-portfolio-api.git"
+  },
+  "author": "Andy Zheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azheng4119/stock-portfolio-api/issues"
+  },
+  "homepage": "https://github.com/azheng4119/stock-portfolio-api#readme"
+}
