@@ -21,10 +21,6 @@ const Users = db.define("Users", {
             isEmail: true
         }
     },
-    username: {
-        type: sequelize.TEXT,
-        allowNull: false
-    },
     password: {
         type: sequelize.TEXT,
         allowNull: false
@@ -33,6 +29,12 @@ const Users = db.define("Users", {
         type: sequelize.INTEGER,
         allowNull: false,
         required: true
+    },
+    history : {
+        type : sequelize.ARRAY(sequelize.TEXT),
+    },
+    stocks : {
+        type : sequelize.TEXT
     }
 }, {
     timestamps: false
