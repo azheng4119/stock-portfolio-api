@@ -6,7 +6,7 @@ const axios = require('axios');
 // const apiUrl = `https://api-v2.intrinio.com/securities/MSFT/prices/realtime?api_key=OjFhN2ViZWI2NzFhNDU3N2Q4NjMyMTQyYmNmZThlN2Uw`
 const getSymbol = async (symbol) => {
     try{
-        let url = `https://api-v2.intrinio.com/securities/${symbol.toUpperCase()}/prices/realtime?api_key=OjFhN2ViZWI2NzFhNDU3N2Q4NjMyMTQyYmNmZThlN2Uw`
+        let url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${symbol}&interval=5min&apikey=UUH5819YQ2VPHIN0`
         let { data } = await axios.get(url);
         return data;
     } catch (error){
