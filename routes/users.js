@@ -13,7 +13,7 @@ users.get('/:user', async (req, res, next) => {
             email: userId
         },
         attributes: {
-            exclude: ['password', 'email', 'id']
+            exclude: ['password', 'id']
         }
     }).then(user => user).catch(error => null);
     if (data) {
