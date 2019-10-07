@@ -16,9 +16,6 @@ server.get('/', (req, res, next) => {
     res.send('User path /symbols to search')
 })
 
-// db.sync({
-//     force :true
-// })
 
 if (db) {
     server.listen(port, () => console.log(`DB connected. Server listening on port ${port}`));
